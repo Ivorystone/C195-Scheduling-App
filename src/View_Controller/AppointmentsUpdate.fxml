@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="319.0" prefWidth="465.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View_Controller.AppointmentsUpdateController">
+    <children>
+        <Label fx:id="titleText" layoutX="139.0" layoutY="22.0" text="Update Appointment">
+            <font>
+                <Font size="19.0" />
+            </font>
+        </Label>
+      <Label layoutX="63.0" layoutY="66.0" text="Customer:" />
+      <Label fx:id="customerLabel" layoutX="137.0" layoutY="66.0" prefHeight="17.0" prefWidth="265.0" />
+        <DatePicker fx:id="datePicker" layoutX="137.0" layoutY="100.0" prefHeight="27.0" prefWidth="265.0" promptText="Date" />
+        <ComboBox fx:id="startTimeComboBox" layoutX="137.0" layoutY="137.0" prefHeight="27.0" prefWidth="265.0" promptText="Start time" />
+        <ComboBox fx:id="typeComboBox" layoutX="137.0" layoutY="211.0" prefHeight="27.0" prefWidth="265.0" promptText="Type" />
+        <Button fx:id="saveButton" layoutX="247.0" layoutY="266.0" mnemonicParsing="false" onMouseClicked="#saveUpdate" prefHeight="27.0" prefWidth="69.0" text="Save" />
+        <Button fx:id="backButton" layoutX="343.0" layoutY="266.0" mnemonicParsing="false" onMouseClicked="#back" prefHeight="27.0" prefWidth="59.0" text="Back" />
+      <Label layoutX="63.0" layoutY="105.0" text="Date:" />
+      <Label layoutX="63.0" layoutY="142.0" text="Start time:" />
+      <Label layoutX="64.0" layoutY="181.0" text="End time:" />
+      <Label fx:id="endTimeLabel" layoutX="137.0" layoutY="181.0" prefHeight="17.0" prefWidth="82.0" />
+      <Label layoutX="64.0" layoutY="216.0" text="Type:" />
+    </children>
+</AnchorPane>
