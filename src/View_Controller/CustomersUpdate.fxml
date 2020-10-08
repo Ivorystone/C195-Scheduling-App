@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="294.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View_Controller.CustomersUpdateController">
+    <children>
+        <Label fx:id="titleText" layoutX="221.0" layoutY="23.0" text="Update Customer">
+            <font>
+                <Font size="19.0" />
+            </font>
+        </Label>
+        <TextField fx:id="nameField" layoutX="168.0" layoutY="59.0" prefHeight="27.0" prefWidth="265.0" promptText="Name" />
+        <TextField fx:id="addressField" layoutX="168.0" layoutY="96.0" prefHeight="27.0" prefWidth="265.0" promptText="Address" />
+      <ComboBox fx:id="cityComboBox" layoutX="168.0" layoutY="134.0" prefHeight="27.0" prefWidth="265.0" promptText="City" />
+      <TextField fx:id="zipField" layoutX="168.0" layoutY="170.0" prefHeight="27.0" prefWidth="265.0" promptText="Zip" />
+        <TextField fx:id="phoneField" layoutX="168.0" layoutY="207.0" prefHeight="27.0" prefWidth="265.0" promptText="Phone" />
+        <Button fx:id="saveButton" layoutX="416.0" layoutY="244.0" mnemonicParsing="false" onMouseClicked="#saveUpdate" prefHeight="27.0" prefWidth="69.0" text="Save" />
+        <Button fx:id="backButton" layoutX="512.0" layoutY="244.0" mnemonicParsing="false" onMouseClicked="#back" prefHeight="27.0" prefWidth="59.0" text="Back" />
+    </children>
+</AnchorPane>
