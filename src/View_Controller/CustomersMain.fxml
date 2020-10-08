@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View_Controller.CustomersMainController">
+    <children>
+        <Label fx:id="titleText" layoutX="207.0" layoutY="20.0" text="Manage Customers">
+            <font>
+                <Font size="19.0" />
+            </font>
+        </Label>
+        <TableView fx:id="customersTableView" layoutX="103.0" layoutY="64.0" prefHeight="272.0" prefWidth="395.0">
+            <columns>
+                <TableColumn fx:id="idColumn" prefWidth="58.0" text="ID" />
+                <TableColumn fx:id="nameColumn" prefWidth="336.0" text="Name" />
+            </columns>
+        </TableView>
+        <Button fx:id="addButton" layoutX="181.0" layoutY="354.0" mnemonicParsing="false" onMouseClicked="#addCustomer" prefHeight="27.0" prefWidth="59.0" text="Add" />
+        <Button fx:id="updateButton" layoutX="259.0" layoutY="354.0" mnemonicParsing="false" onMouseClicked="#updateCustomer" prefHeight="27.0" prefWidth="69.0" text="Update" />
+        <Button fx:id="deleteButton" layoutX="350.0" layoutY="354.0" mnemonicParsing="false" onMouseClicked="#deleteCustomer" prefHeight="27.0" prefWidth="69.0" text="Delete" />
+        <Button fx:id="exitButton" layoutX="512.0" layoutY="354.0" mnemonicParsing="false" onMouseClicked="#back" prefHeight="27.0" prefWidth="59.0" text="Back" />
+    </children>
+</AnchorPane>
