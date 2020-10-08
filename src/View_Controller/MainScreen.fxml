@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="250.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View_Controller.MainScreenController">
+    <children>
+        <Label fx:id="titleText" layoutX="130.0" layoutY="22.0" text="Scheduling App">
+            <font>
+                <Font size="19.0" />
+            </font>
+        </Label>
+        <Button fx:id="customersButton" layoutX="104.0" layoutY="72.0" mnemonicParsing="false" onMouseClicked="#manageCustomers" prefHeight="27.0" prefWidth="193.0" text="Manage Customers" />
+        <Button fx:id="appointmentsButton" layoutX="104.0" layoutY="114.0" mnemonicParsing="false" onMouseClicked="#manageAppointments" prefHeight="27.0" prefWidth="193.0" text="Manage Appointments" />
+        <Button fx:id="reportsButton" layoutX="104.0" layoutY="155.0" mnemonicParsing="false" onMouseClicked="#createReports" prefHeight="27.0" prefWidth="193.0" text="Create Reports" />
+        <Button fx:id="exitButton" layoutX="305.0" layoutY="209.0" mnemonicParsing="false" onMouseClicked="#logOut" prefHeight="27.0" prefWidth="70.0" text="Log Out" />
+    </children>
+</AnchorPane>
